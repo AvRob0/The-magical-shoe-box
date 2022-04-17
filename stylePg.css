@@ -1,0 +1,194 @@
+* {/*alignment for the whole page*/
+      text-align: center
+    
+}
+
+.button-1 {/*button effect before curser touches and settings*/
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #8000ff;
+    color: #18181a;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 18px 18px 17px;
+    text-decoration: none;
+    cursor: pointer;
+    background: transparent;
+    animation: glow 100s infinite;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+
+  
+  .button-1 span:first-child {/*button span settings*/
+    position: relative;
+    transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 10;
+}
+  
+  .button-1 span:last-child {/*button settings for when curser touches it*/
+    color: #8000ff;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 100;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateY(225%) translateX(-50%);
+    height: 14px;
+    line-height: 13px;
+}
+  
+  .button-1:after {/*button settings for after curser touches*/
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform-origin: bottom center;
+    transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    transform: skewY(9.3deg) scaleY(0);
+    z-index: 50;
+}
+  
+  .button-1:hover:after {/*button hover settings*/
+    transform-origin: bottom center;
+    transform: skewY(9.3deg) scaleY(2);
+}
+  
+  .button-1:hover span:last-child {/*button hover setting for span tags*/
+    transform: translateX(-50%) translateY(-100%);
+    opacity: 1;
+    transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+@keyframes glow {/*glow settings for glow effect for button glow*/
+    from {
+        text-shadow: 0 0 20px #8000ff;
+      }
+      to {
+        text-shadow: 0 0 30px #8000ff, 0 0 10px #8000ff;
+      }
+    }
+
+.display{/*display settings*/
+
+    font-size: 25px;
+    font-family: 'Teko', sans-serif;
+    color: #8000ff;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+    justify-self: center;
+    padding-bottom: 4rem;
+    animation: glow 100s infinite
+}
+@keyframes glow {/*glow settings for display*/
+    from {
+      text-shadow: 0 0 50px #ff0000;
+    }
+    to {
+      text-shadow: 0 0 50px #ff0000, 0 0 10px #ff0000;
+    }
+}
+.para{/*paragragh tags settings*/
+    font-size: 25px;
+    font-family: 'Teko', sans-serif;
+    color: #8000ff;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+    justify-self: center;
+    padding-bottom: 4rem;
+    animation: glow 100s infinite
+}
+@keyframes glow {/*glow settings for paragragh tags section*/
+    from {
+      text-shadow: 0 0 50px #ff0000;
+    }
+    to {
+      text-shadow: 0 0 50px #ff0000, 0 0 10px #ff0800;
+    }
+}
+
+.colorChange { /*h1 class tags setting*/
+    font-size: 30px;
+    font-family:monospace;
+    background: transparent;
+    animation: colorRotate 10s linear 0s infinite;
+  
+
+    
+}
+@keyframes colorRotate  {/*Text color rotate settings*/
+    from{
+        color: rgba(0, 0, 0, 0.36);
+    }
+    10% {
+        color: rgba(18, 18, 90, 0.801);
+    }
+    10% {
+        color: rgb(3, 217, 255);
+    }
+    50% {
+        color:#e369e3fc;
+    }
+    75% {
+        color: #741774e4;
+    }
+    100% {
+        color: #8000ff;
+    }
+}
+    
+
+
+
+
+.wrapper { /*Background settings gor body class tags*/
+    height: 100%;
+    width: 100%;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+  background: linear-gradient(124deg, #000000, #cc0808, #847a593f, rgba(6, 13, 67, 0.889), rgb(146, 139, 9), rgb(0, 0, 0), #2d2d2f4f, #6d4672, #290855f8);
+  background-size: 2000% 2000%;
+ 
+
+  
+  -webkit-animation: rainbow 10s ease infinite;
+  -z-animation: rainbow 10s ease infinite;
+  -o-animation: rainbow 10s ease infinite;
+    animation: rainbow 10s ease infinite;}
+  
+  @-webkit-keyframes rainbow {/*settings for the effect for background transistion*/
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-moz-keyframes rainbow {/*settings for the effect for background transistion*/
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-o-keyframes rainbow {/*settings for the effect for background transistion*/
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @keyframes rainbow { /*settings for the effect for background transistion*/
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+
+  
+  
